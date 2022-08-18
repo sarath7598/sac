@@ -1,0 +1,89 @@
+{% extends 'master.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        .grid-container {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+          grid-template-rows:auto auto auto;
+          background-color: #6d8396;
+          padding: 10px;
+        }
+        .grid-item {
+          background-color: rgba(255, 255, 255, 0.8);
+          border: 1px solid rgba(0, 0, 0, 0.8);
+          padding: 20px;
+          font-size: 30px;
+          text-align: center;
+          align-content: center;
+
+        }
+        .grid-item img {
+            width:160px ;
+            height:160px ;
+            align-content: center;
+        }
+        
+        </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="{% static 'images/shirt1.jfif' %}" alt="">
+            price:400$
+            Brand:Puma
+        </div>
+        <div class="grid-item">
+            <img src="{% static 'images/shirt2.jfif' %}" alt="">
+            price:400$
+            Brand:Puma
+        </div>
+        <div class="grid-item"><img src="{% static 'images/shirt3.jfif' %}" alt="">
+            price:400$
+            Brand:Puma
+        </div>  
+        <div class="grid-item"><img src="{% static 'images/shirt5.jfif' %}" alt="">
+            price:400$
+            Brand:Puma
+        </div>
+        <div class="grid-item"><img src="{% static 'images/shirt5.jfif' %}" alt="">
+            price:400$
+            Brand:Puma
+        </div>
+        <div class="grid-item">
+            <img src="{% static 'images/shirt6.jfif' %}" alt="">
+            price:400$
+            Brand:Puma
+        </div>  
+        <div class="grid-item">
+            <img src="{% static 'images/shirt7.jfif' %}" alt="">
+            price:400$
+            Brand:Puma
+        </div>
+        <div class="grid-item">
+            <img src="{% static 'images/shirt7.jfif' %}" alt="">
+            price:400$
+            Brand:Puma
+        </div>
+        <div class="grid-item">
+            <img src="{% static 'images/shirt7.jfif' %}" alt="">
+            price:400$
+            Brand:Puma
+        </div>  
+        <div class="grid-item">
+            <img src="{% static 'images/shirt7.jfif' %}" alt="">
+            price:400$
+            Brand:Puma
+        </div>  
+      </div>
+      
+</body>
+</html>
+{% endblock %}

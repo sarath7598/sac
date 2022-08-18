@@ -1,0 +1,213 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAC</title>
+  <link rel="stylesheet" href="{% static 'styles/master.css' %}">
+</head>
+<body style="margin:0">
+  <div class="header">
+    <div class="header_1">
+      <div><img src="{% static 'images/logo.jpg' %}" style="margin:10px; padding:5px 1px 0px 1px" alt=""></div>
+    <div style="padding:0px 0px 0px 20px;" class="header_1"><h3 style="margin:10px; padding:5px 0px 0px 1px">SAC Always with you </h3></div>
+    <div style="width:200px" style="padding:0px 0px 0px 200px">
+      <form action="" style="padding:18px 0px 0px 80px">
+        <input type="text" placeholder="Search Products">
+        <button type="button" >Search</button>
+      </form>
+    </div>
+    <div style="padding: 0px 0px 0px 200px; width:500px;">
+      <nav style="padding-top:20px ; font-size:20px;">
+        <a href="{% url 'facebook' %}">ABOUT</a> |
+        <a href="/css/">TOP BRANDS</a> |
+        <a href="/js/">CATEGORY</a> |
+        <a href="/python/">SPECIAL OFFER</a>
+        </nav>
+    </div>
+    <div class="log_reg">
+        <a href="{% url 'login' %}">Start Purchase</a>
+        <a href="{% url 'login' %}">Start Celling</a> 
+    
+      
+    </div>
+      
+  </div>
+  
+  </div>
+
+  </div>
+
+  {% block content %}
+
+  {% endblock %}
+
+
+  <footer style="height:300px; background-color:rgb(5, 74, 102) ;background-size: 100% 300px; color:white;">
+    <table align="center">
+      <tr>
+        <td style="width:20%">
+          <table>
+            <tr>
+              <th>
+                Get to Know Us
+              </th>
+            </tr>
+            <tr>
+              <td>
+                About Us
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Careers
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Press Releases
+              </td>
+            </tr>
+            <tr>
+              <td>
+                SAC Cares
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Gift a Smile
+              </td>
+            </tr>
+            
+          </table>
+        </td>
+
+        <td style="width:20%">
+          <table>
+            <tr>
+              <th>
+                Connect with Us
+              </th>
+            </tr>
+            <tr>
+              <td>
+                Facebook
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Twitter
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Instagram
+              </td>
+            </tr>
+            <tr>
+              <td>
+                &nbsp;
+              </td>
+            </tr>
+            <tr>
+              <td>
+                &nbsp;
+              </td>
+            </tr>
+            </table>
+        </td>
+
+ 
+          
+        
+
+        <td style="width:20%">
+          <table>
+            <tr>
+              <th>
+                Connect with Us
+              </th>
+            </tr>
+            <tr>
+              <td>
+                Facebook
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Twitter
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Instagram
+              </td>
+            </tr>
+            <tr>
+              <td>
+                &nbsp;
+              </td>
+            </tr>
+            <tr>
+              <td>
+                &nbsp;
+              </td>
+            </tr>
+            </table>
+        </td>
+
+
+        <td style="width:20%">
+          <table>
+            <tr>
+              <th>
+                Connect with Us
+              </th>
+            </tr>
+            <tr>
+              <td>
+                Facebook
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Twitter
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Instagram
+              </td>
+            </tr>
+            <tr>
+              <td>
+                &nbsp;
+              </td>
+            </tr>
+            <tr>
+              <td>
+                &nbsp;
+              </td>
+            </tr>
+            </table>
+        </td>
+
+
+      </tr>
+    </table>
+    <hr>
+
+    <div class="footerp">
+      <p>SAC is a clothing company that was founded in order to create masks for the Covid Pandemic 2020.</p>
+      <p> We now have over 400 customers and sell over 3000 products.</p>
+      <p>More than 75% of our customers are pleased with our product and service,</p>
+      <p>so we aim for 100% satisfaction.</p>
+      
+      </div>
+      <br>
+  </footer>
+  
+</body>
+</html>

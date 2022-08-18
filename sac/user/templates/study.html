@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAC</title>
+    <style>
+            .grid-container {
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              grid-template-rows:auto auto auto;
+              
+              padding: 10px;
+            }
+            .grid-item {
+              background-color: rgba(73, 72, 72, 0.8);
+              border: 1px solid rgba(0, 0, 0, 0.8);
+              padding: 20px;
+              font-size: 30px;
+              text-align: center;
+              align-content: center;
+    
+            }
+            .grid-item img {
+                width:160px ;
+                height:160px ;
+                align-content: center;
+            }
+    </style>
+</head>
+<body style="background-color: rgb(3, 62, 80) ;">
+    <div align="center"style="width:100% >
+        <table>
+            <tr>
+                <td>
+                    <font>WELCOME TO SAC</font> 
+                </td>
+
+                <td>
+                    <img  src="{% static 'images/logo.jpg' %}" width="30px" height="30px" style="padding-top:20px;">
+
+                </td>
+
+            </tr>
+        </table>
+    </div>
+      <div class="grid-container">
+        
+        <div class="grid-item">
+            <div>
+                <h2></h2>
+            </div>
+        </div>
+        <div class="grid-item">
+            price:400$
+            Brand:Puma
+        </div>
+    </div>
+</body>
+</html>
